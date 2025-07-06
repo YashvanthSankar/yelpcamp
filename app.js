@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const Campground = require("./models/campground");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -12,7 +13,6 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
   console.log("Database connected");
 });
-const Campground = require("./models/campground");
 
 
 app.get("/", (req, res) => {
