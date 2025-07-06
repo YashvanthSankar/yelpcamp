@@ -20,7 +20,7 @@ const seedDB = async () => {
     const random1000 = Math.floor(Math.random() * 1000);
     const camp = new Campground({
       title: `${randomInArray(descriptors)} ${randomInArray(places)}`,
-      location: `${cities[random1000].city} ${cities[random1000].state}`,
+      location: `${cities[random1000].city}, ${cities[random1000].state}`,
       price: `$ ${random1000}`,
     });
     await camp.save();
