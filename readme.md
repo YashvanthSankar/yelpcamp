@@ -8,7 +8,7 @@ A full-stack **campground listing and review application** built using **Node.js
 
 - **Backend:** Node.js, Express.js
 - **Frontend:** EJS, Bootstrap 5
-- **Database:** MongoDB, Mongoose
+- **Database:** MongoDB, Mongoose ODM
 - **Templating Engine:** EJS(with ejs-mate layout support)
 - **Middleware:** Method-Override
 - **Other Tools:** Postman, Nodemon
